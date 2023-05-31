@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .parallaxHeader {
   height: 200px;
   padding: 48px;
@@ -95,4 +99,8 @@ div#carouselControl {
   color: #fff;
   font-size: 16px;
   text-align: bottom;
+}
+
+.container-fluid h1 {
+  margin-bottom: 24px;
 }

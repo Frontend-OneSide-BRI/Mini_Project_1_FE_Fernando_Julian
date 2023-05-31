@@ -165,15 +165,14 @@
           <h1>Search Here</h1>
         </div>
         <div class="searchParallaxHeader">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="    Search"
-            />
-            <button class="btn btn-dark" type="submit">Search</button>
-          </form>
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchInput"
+            onchange="search()"
+          />
         </div>
       </div>
     </section>
@@ -182,78 +181,86 @@
 
     <!-- Start Cards -->
 
-    <section id="popularImages">
-      <h1 class="titlePopularImages">Popular Images</h1>
-      <div id="wrapperCard" class="d-flex flex-wrap justify-content-center">
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+    <section id="popularImages" class="m-2">
+      <div class="container-fluid">
+        <h1 class="titlePopularImages">Your pict of the day!</h1>
+        <div id="wrapperCard" class="d-flex flex-wrap justify-content-center">
+          <div class="card" style="width: 28rem">
+            <div id="searchImage" class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?robot"
+                class="img-fluid"
+                alt="..."
+                id="gambar"
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+          <div class="card" style="width: 28rem">
+            <div class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?soccer"
+                class="img-fluid"
+                id="gambar"
+                alt="..."
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+          <div class="card" style="width: 28rem">
+            <div class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?baseball"
+                class="img-fluid"
+                id="gambar"
+                alt="..."
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+          <div class="card" style="width: 28rem">
+            <div class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?chess"
+                class="img-fluid"
+                id="gambar"
+                alt="..."
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+          <div class="card" style="width: 28rem">
+            <div class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?gaming"
+                class="img-fluid"
+                id="gambar"
+                alt="..."
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 28rem">
-          <div class="image-container overflow-hidden">
-            <img
-              src="https://source.unsplash.com/600x600/?robot"
-              class="img-fluid"
-              alt="..."
-            />
-            <div class="overlay">
-              <div class="text">Image Description</div>
+          <div class="card" style="width: 28rem">
+            <div class="image-container overflow-hidden">
+              <img
+                src="https://source.unsplash.com/600x600/?stich"
+                class="img-fluid"
+                id="gambar"
+                alt="..."
+              />
+              <div class="overlay">
+                <div class="text">Image Description</div>
+              </div>
             </div>
           </div>
         </div>
@@ -269,5 +276,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- End Bootstrap JS -->
+    <!-- Start Local Javascript -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- End Local Javascript -->
   </body>
 </html>
