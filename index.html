@@ -19,9 +19,13 @@
     <!-- Start Container -->
     <!-- Start Navbar -->
     <section id="navigation">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand navbar-brand-centered" href="#">Navbar</a>
+          <a class="navbar-brand navbar-brand-centered fw-bold" href="#"
+            >Nando Gallery</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -36,45 +40,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  class="nav-link active fw-semibold"
+                  aria-current="page"
+                  href="/"
+                  >Home</a
                 >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="./gallery.html">Gallery</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="    Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
@@ -83,7 +59,7 @@
     <!-- Start Banner -->
     <section id="Banner">
       <div
-        class="carousel slide carousel-fade"
+        class="carousel slide carousel-fade shadow-lg"
         id="carouselControl"
         data-bs-ride="carousel"
       >
@@ -91,23 +67,22 @@
           <div class="overlay"></div>
           <div class="carousel-item active" data-bs-interval="10000">
             <img
-              src="https://source.unsplash.com/1920x400/?beach"
-              class="d-block w-100"
+              src="https://source.unsplash.com/1920x400/?food"
+              class="d-block object-fit-cover"
             />
-            <div class="carousel-overlay">
-              <div class="carousel-overlay-content">
-                <h5>Lorem ipsum dolor sit</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  vero saepe repellendus a ratione animi.
-                </p>
-              </div>
+            <div class="carousel-overlay"></div>
+            <div class="carousel-overlay-content">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                vero saepe repellendus a ratione animi.
+              </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="https://source.unsplash.com/1920x400/?boy"
-              class="d-block w-100"
+              src="https://source.unsplash.com/1920x400/?animals"
+              class="d-block object-fit-cover object-position-center"
             />
 
             <div class="carousel-overlay">
@@ -122,8 +97,8 @@
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="https://source.unsplash.com/1920x400/?valorant"
-              class="d-block w-100"
+              src="https://source.unsplash.com/1920x400/?vehicles"
+              class="d-block object-fit-cover"
             />
             <div class="carousel-overlay">
               <div class="carousel-overlay-content">
@@ -180,9 +155,8 @@
     <!-- End Parallax -->
 
     <!-- Start Cards -->
-
     <section id="popularImages" class="m-2">
-      <div class="container-fluid">
+      <div class="container-fluid text-center m-3">
         <h1 class="titlePopularImages">Your pict of the day!</h1>
         <div id="wrapperCard" class="d-flex flex-wrap justify-content-center">
           <div class="card" style="width: 28rem">
@@ -268,6 +242,7 @@
     </section>
 
     <!-- End Cards -->
+    <footer class="text-center text-lg-start">Copyright 2023</footer>
 
     <!-- Start Bootstrap JS -->
     <script

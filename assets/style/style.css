@@ -104,3 +104,23 @@ div#carouselControl {
 .container-fluid h1 {
   margin-bottom: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .parallaxHeader {
+    height: 20vh;
+    padding: 24px;
+  }
+  .titleParallaxHeader,
+  .searchParallaxHeader {
+    height: 30px;
+  }
+  .container-fluid h1 {
+    margin-bottom: 12px;
+  }
+  .carousel-inner {
+    height: 30vh;
+  }
+  .carousel-overlay-content {
+    font-size: 12px;
+  }
+}

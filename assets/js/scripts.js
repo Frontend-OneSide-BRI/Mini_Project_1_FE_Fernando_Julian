@@ -26,7 +26,7 @@ const showCategory = document.getElementById("showCategory");
 function categoryImages(params1) {
   showCategory.textContent = "";
 
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 6; i++) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.style.width = "28rem";
